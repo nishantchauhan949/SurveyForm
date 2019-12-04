@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="SurveyStyle.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Course Evaluation</h1>
+    <p id="description">Please submit feedback regarding the course.</p>
+    <form id="survey-form">
+        <div id="name-div">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="E.g. Harry Potter" required><br><br>
+        </div>
+
+        <div id="email-div">
+            <label for="email" id="email-label">Email Address:</label>
+            <input type="email" id="email" name="email" pattern="harrythewizard@gmail.com"
+                placeholder="E.g. harry_potter@hogwarts.edu" value="" required><br><br>
+        </div>
+
+        <div id="number-div">
+            <label for="age" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="E.g. 22" size="3" min="18" max="80" value=""><br><br>
+        </div>
+
+        <div id="dropdown-div">
+            <label for="dropdown">Branch:</label>
+            <select id="dropdown">
+                <option value="" disabled selected>Select your branch</option>
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ECE">Electronics Communication Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select> <br>
+        </div>
+
+        <div id="radio-div">
+            <p>Pick your Favorite teacher: </p>
+            <label for="teacher-radio">
+                <input type="radio" name="teacher-radio" value="Nidhi" checked>Nidhi
+            </label>
+
+            <label for="teacher-radio">
+                <input type="radio" name="teacher-radio" value="Ruby">Ruby
+            </label>
+
+            <label for="teacher-radio">
+                <input type="radio" name="teacher-radio" value="Richa">Richa
+            </label>
+            <br>    
+        </div>
+
+        <div id="checkbox-div">
+            <p>Worst Subject: </p>
+            <label for="worst-check">
+                <input type="checkbox" name="worst-check" checked>Mathematics
+            </label>
+
+            <label for="worst-check">
+                <input type="checkbox" name="worst-check">Digital Communication
+            </label>
+
+            <label for="worst-check">
+                <input type="checkbox" name="worst-check">Communication System
+            </label>
+            <br>
+        </div>
+
+        <div id="textarea-div">
+            <p>Suggestions/Comments</p>
+            <textarea id="text-area" rows="5" cols="50" maxlength="200"
+                placeholder="Any Suggestions or Comments are welcome. Max(200 characters)">
+            </textarea>
+        </div>
+
+        <div id="submit-div">
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
